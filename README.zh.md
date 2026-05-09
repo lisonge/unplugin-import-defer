@@ -53,7 +53,8 @@ pnpm add -D unplugin-import-defer
 
 ## 使用方式
 
-Vite
+<details open>
+<summary>Vite</summary>
 
 ```ts
 // vite.config.ts
@@ -64,7 +65,10 @@ export default defineConfig({
 })
 ```
 
-Rollup
+</details>
+
+<details>
+<summary>Rollup</summary>
 
 ```ts
 // rollup.config.js
@@ -75,7 +79,10 @@ export default {
 }
 ```
 
-Webpack
+</details>
+
+<details>
+<summary>Webpack</summary>
 
 ```ts
 // webpack.config.js
@@ -86,7 +93,10 @@ export default {
 }
 ```
 
-esbuild
+</details>
+
+<details>
+<summary>esbuild</summary>
 
 ```ts
 // esbuild.config.js
@@ -98,7 +108,10 @@ build({
 })
 ```
 
-Rspack
+</details>
+
+<details>
+<summary>Rspack</summary>
 
 ```ts
 // rspack.config.js
@@ -109,7 +122,10 @@ export default {
 }
 ```
 
-Farm
+</details>
+
+<details>
+<summary>Farm</summary>
 
 ```ts
 // farm.config.ts
@@ -120,7 +136,10 @@ export default defineConfig({
 })
 ```
 
-Nuxt
+</details>
+
+<details>
+<summary>Nuxt</summary>
 
 ```ts
 // nuxt.config.ts
@@ -129,7 +148,10 @@ export default defineNuxtConfig({
 })
 ```
 
-Astro
+</details>
+
+<details>
+<summary>Astro</summary>
 
 ```ts
 // astro.config.mjs
@@ -140,13 +162,7 @@ export default defineConfig({
 })
 ```
 
-## 工作原理
-
-1. 使用 [oxc-parser](https://github.com/nicolo-ribaudo/oxc) 解析源码生成 AST
-2. 识别所有 `import defer * as X from "module"` 声明
-3. 移除这些 import 声明
-4. 将所有对 `X` 的引用替换为 `(await import("module"))`
-5. 如果延迟导入在非 async 函数作用域中被引用，则报错
+</details>
 
 ## 许可证
 

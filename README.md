@@ -53,7 +53,8 @@ pnpm add -D unplugin-import-defer
 
 ## Usage
 
-Vite
+<details open>
+<summary>Vite</summary>
 
 ```ts
 // vite.config.ts
@@ -64,7 +65,10 @@ export default defineConfig({
 })
 ```
 
-Rollup
+</details>
+
+<details>
+<summary>Rollup</summary>
 
 ```ts
 // rollup.config.js
@@ -75,7 +79,10 @@ export default {
 }
 ```
 
-Webpack
+</details>
+
+<details>
+<summary>Webpack</summary>
 
 ```ts
 // webpack.config.js
@@ -86,7 +93,10 @@ export default {
 }
 ```
 
-esbuild
+</details>
+
+<details>
+<summary>esbuild</summary>
 
 ```ts
 // esbuild.config.js
@@ -98,7 +108,10 @@ build({
 })
 ```
 
-Rspack
+</details>
+
+<details>
+<summary>Rspack</summary>
 
 ```ts
 // rspack.config.js
@@ -109,7 +122,10 @@ export default {
 }
 ```
 
-Farm
+</details>
+
+<details>
+<summary>Farm</summary>
 
 ```ts
 // farm.config.ts
@@ -120,7 +136,10 @@ export default defineConfig({
 })
 ```
 
-Nuxt
+</details>
+
+<details>
+<summary>Nuxt</summary>
 
 ```ts
 // nuxt.config.ts
@@ -129,7 +148,10 @@ export default defineNuxtConfig({
 })
 ```
 
-Astro
+</details>
+
+<details>
+<summary>Astro</summary>
 
 ```ts
 // astro.config.mjs
@@ -140,13 +162,7 @@ export default defineConfig({
 })
 ```
 
-## How it works
-
-1. Parses source code using [oxc-parser](https://github.com/nicolo-ribaudo/oxc)
-2. Identifies `import defer * as X from "module"` declarations
-3. Removes those import declarations
-4. Replaces all references to `X` with `(await import("module"))`
-5. Reports an error if a deferred import is referenced in a non-async function scope
+</details>
 
 ## License
 
