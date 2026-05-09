@@ -4,6 +4,14 @@
   "version": "0.1.0",
   "description": "Transform import defer syntax to dynamic import()",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisonge/unplugin-import-defer.git"
+  },
+  "homepage": "https://github.com/lisonge/unplugin-import-defer#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "keywords": [
     "unplugin",
     "vite",
