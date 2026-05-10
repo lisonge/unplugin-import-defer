@@ -1,3 +1,3 @@
 # What's Changed
 
-- feat: initial release
+- feat: add support for rolldown/bun/unloader
