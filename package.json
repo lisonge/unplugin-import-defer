@@ -17,6 +17,11 @@
     "vite",
     "webpack",
     "rollup",
+    "rolldown",
+    "esbuild",
+    "rspack",
+    "farm",
+    "bun",
     "transform",
     "import-defer"
   ],
@@ -45,6 +50,10 @@
       "types": "./dist/rollup.d.mts",
       "import": "./dist/rollup.mjs"
     },
+    "./rolldown": {
+      "types": "./dist/rolldown.d.mts",
+      "import": "./dist/rolldown.mjs"
+    },
     "./rspack": {
       "types": "./dist/rspack.d.mts",
       "import": "./dist/rspack.mjs"
@@ -60,6 +69,14 @@
     "./webpack": {
       "types": "./dist/webpack.d.mts",
       "import": "./dist/webpack.mjs"
+    },
+    "./unloader": {
+      "types": "./dist/unloader.d.mts",
+      "import": "./dist/unloader.mjs"
+    },
+    "./bun": {
+      "types": "./dist/bun.d.mts",
+      "import": "./dist/bun.mjs"
     },
     "./package.json": "./package.json"
   },
@@ -79,6 +96,7 @@
     "@nuxt/kit": "^3",
     "@nuxt/schema": "^3",
     "esbuild": "*",
+    "rolldown": ">=1",
     "rollup": "^3 || ^4",
     "vite": ">=3",
     "webpack": "^4 || ^5"
@@ -94,6 +112,9 @@
       "optional": true
     },
     "esbuild": {
+      "optional": true
+    },
+    "rolldown": {
       "optional": true
     },
     "rollup": {

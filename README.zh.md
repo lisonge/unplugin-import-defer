@@ -139,6 +139,47 @@ export default defineConfig({
 </details>
 
 <details>
+<summary>Rolldown</summary>
+
+```ts
+// rolldown.config.js
+import importDefer from 'unplugin-import-defer/rolldown'
+
+export default {
+  plugins: [importDefer()],
+}
+```
+
+</details>
+
+<details>
+<summary>Bun</summary>
+
+```ts
+// bun.config.ts
+import importDefer from 'unplugin-import-defer/bun'
+
+export default {
+  plugins: [importDefer()],
+}
+```
+
+</details>
+
+<details>
+<summary>Unloader</summary>
+
+```ts
+import importDefer from 'unplugin-import-defer/unloader'
+
+export default {
+  plugins: [importDefer()],
+}
+```
+
+</details>
+
+<details>
 <summary>Nuxt</summary>
 
 ```ts
